@@ -8,7 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class Visa {
     @GetMapping("/myvisa")
     public String getData(){
-        return "Please submit your visa application here";
+        return "Please submit your visa application here,hhhhhskjdfnkjsdnfk jnsk, loging";
     }
+
 
 }

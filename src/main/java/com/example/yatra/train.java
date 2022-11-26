@@ -5,10 +5,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class Visa {
-    @GetMapping("/myvisa")
+public class train {
+    @GetMapping("/mytrain")
     public String getData(){
-        return "Please submit your visa application here,welcome";
+        return "Please book your Bus ticket, AALIYA EXPRESS LINES";
     }
 
 }

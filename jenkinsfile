@@ -7,7 +7,7 @@
          agent { label 'stackholderALinuxJava' }
 
          tools {
-             maven 'maven_3.8.6'
+             maven 'maven'
          }
 
          stages {

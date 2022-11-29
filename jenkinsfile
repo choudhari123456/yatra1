@@ -18,7 +18,7 @@ pipeline {
                 sh 'java --version'
                 sh 'git --version'
                 sh 'whoami'
-                echo "this pipeline is running via Jenkins User"
+                echo "this pipeline is running via Abhijeet User"
             }
         }
         stage('Code Compilation') {

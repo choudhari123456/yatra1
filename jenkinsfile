@@ -4,7 +4,7 @@ pipeline {
         buildDiscarder(logRotator(numToKeepStr: '5', artifactNumToKeepStr: '5'))
     }
 
-    agent any
+    agent "java"
 
     tools {
         maven 'maven'
@@ -18,7 +18,7 @@ pipeline {
                 sh 'java --version'
                 sh 'git --version'
                 sh 'whoami'
-                echo "this pipeline is running via Abhi User"
+                echo "this pipeline is running via Jenkins User"
             }
         }
         stage('Code Compilation') {
@@ -116,4 +116,9 @@ pipeline {
         }**/
     }
 }
-                       
+
+
+
+
+
+agent { label 'stackholderALinuxJava' }
